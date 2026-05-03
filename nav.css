@@ -1,0 +1,24 @@
+         body{
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            background-color: rgba(62, 176, 126, 0.878);
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            gap: 400px;
+            padding: 10px;
+            background-color: rgba(25, 110, 82, 0.47);
+            
+        }
+        div a{
+            color: rgb(0, 0, 0);
+               font-size: large;
+            text-decoration: none;
+        }
+        .menu{
+            border: 1px solid black;
+         
+        }

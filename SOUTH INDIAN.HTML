@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="nav.css">  
+     <style>
+        *{
+            box-sizing: border-box;
+        }
+        .imge{
+                display: flex;
+                gap: 1px;
+        }
+        .box1{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            background-image: url('./s1.webp');
+            background-position: top;
+            background-size: cover;
+            position: relative;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            background-image: url('./s2.webp');
+            background-position: top;
+            background-size: cover;
+            position: relative;
+        }
+        .box3{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            background-image: url('./s3.webp');
+            background-position: top;
+            background-size: cover;
+            position: relative;
+        }
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            background-image: url('./s4.webp');
+            background-position: top;
+            background-size: cover;
+            position: relative;
+        }
+        .box5{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            background-image: url('./s5.webp');
+            background-position: top;
+            background-size: cover;
+            position: relative;
+        }
+        .box1::before{
+            content: '';
+            position:absolute;
+            background-color:rgba(0, 0, 0, 0.54);
+             width: 400px;
+            height: 200px;
+            transition: 2s;
+        }
+        .box1::after{
+            content: '';
+            position:absolute;
+            background-color: rgba(0, 0, 0, 0.54);
+             width: 400px;
+            height: 200px;
+            bottom: 0;
+             transition: 2s;
+        }
+        .box1:hover::before{
+            height: 0;
+        }
+        .box1:hover::after{
+            height: 0;
+        }
+         .box2::before{
+            content: '';
+            position:absolute;
+            background-color:rgba(0, 0, 0, 0.54);
+             width: 340px;
+            height: 200px;
+            right: 0;
+            transition: 2s;
+        }
+        .box2::after{
+            content: '';
+            position:absolute;
+            background-color: rgba(0, 0, 0, 0.54);
+            width: 340px;
+            height: 200px;
+            bottom: 0;
+             transition: 2s;
+        }
+        .box2:hover::before{
+            width: 0;
+        }
+        .box2:hover::after{
+           width: 0;
+        }
+         .box3::before{
+            content: '';
+            position:absolute;
+            background-color:rgba(0, 0, 0, 0.54);
+             width: 340px;
+            height: 200px;
+            right: 0;
+            transition: 2s;
+        }
+        .box3::after{
+            content: '';
+            position:absolute;
+            background-color: rgba(0, 0, 0, 0.54);
+            width: 340px;
+            height: 200px;
+            bottom: 0;
+             transition: 2s;
+        }
+        .box3:hover::before{
+            width: 0;
+            height: 0;
+        }
+        .box3:hover::after{
+             width: 0;
+            height: 0;
+        }
+          .box4::before{
+            content: '';
+            position:absolute;
+            background-color:rgba(0, 0, 0, 0.54);
+             width: 400px;
+            height: 400px;
+            right: 0;
+            transition: 2s;
+        }
+        .box4::after{
+            content: '';
+            position:absolute;
+            background-color: rgba(0, 0, 0, 0.54);
+            width: 400px;
+            height: 400px;
+            bottom: 0;
+             transition: 2s;
+        }
+        .box4:hover::before{
+            width: 0;
+            height: 0;
+        }
+        .box4:hover::after{
+            width: 0;
+            height: 0;
+        }
+        
+        
+     </style>
+</head>
+<body>
+    <h1>HOTEL MENU</h1>
+    <div>
+        <div class="menu">
+            <nav>
+                <div><a href="#">HOME</a></div>
+                <div><a href="#">GUJRATI</a></div>
+                <div><a href="#">SOUTH INDIAN</a></div>
+                <div><a href="#">PUNJABI</a></div>
+            </nav>
+        </div>
+        <div class="imge">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+
+
+        </div>
+    
+    </div>
+</body>
+</html>
